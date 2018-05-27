@@ -62,7 +62,7 @@ def splitDataSet(dataSet, feature, value):
 	    newEntropy += prob * calcEntropy(subDataSet)
 	    # the information gain of feature is the reduction in entropy
     gain = baseEntropy - newEntropy
-    return infoGain
+    return gain
 
 def chooseBestFeature(dataSet):
 	numFeatures = len(dataSet[0]) - 1
