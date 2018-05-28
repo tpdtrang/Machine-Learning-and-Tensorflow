@@ -13,7 +13,7 @@ def createDataSet():
 # calculate entropy of dataset
 def calcEntropy(dataSet):
 	# number of data instances or number of rows of our dataSet
-	numIntances = len(dataSet)
+	numInstances = len(dataSet)
   	# create a dictionary whose keys are the values in the final column
 	keyCounts = {}
   	# for each instance or row 
@@ -29,7 +29,7 @@ def calcEntropy(dataSet):
 	# for each key
 	for key in keyCounts:
 		# calculate the probability of this key
-		prob = float(keyCounts[key])/numIntances 
+		prob = float(keyCounts[key])/numInstances 
 		# calculate entropy
 		entropy -= prob * log(prob,2)
 	return entropy
